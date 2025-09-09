@@ -1,0 +1,45 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al-Muntadhar</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, black, red, blue, yellow);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+
+  @keyframes gradientBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 0 0 15px rgba(0,0,0,0.3);
+    font-size: 3rem;
+    background: rgba(0,0,0,0.4);
+    padding: 20px 40px;
+    border-radius: 15px;
+  }
+  a {
+    color: yellow;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+<h1>Owned by <a href="https://hackerone.com/almuntadhar" onclick="window.open(this.href, '_blank')" target="_blank">Al-Muntadhar</a></h1> <!-- the reason for window.open() is because the CSS used before might interupt the pointer. however, CSS is changed -->
+<div class="color-splash" id="splash"></div>
+
+
+</body></html>
