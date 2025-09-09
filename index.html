@@ -6,10 +6,12 @@
   body {
     margin: 0;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(135deg, black, red, blue, yellow);
     background-size: 400% 400%;
     animation: gradientBG 10s ease infinite;
-    overflow: hidden;
     font-family: Arial, sans-serif;
   }
 
@@ -20,17 +22,22 @@
   }
 
   h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: #fff;
     text-shadow: 0 0 15px rgba(0,0,0,0.3);
-    font-size: 3rem;
+    font-size: 2.5rem;
     background: rgba(0,0,0,0.4);
     padding: 20px 40px;
     border-radius: 15px;
+    text-align: center;
+    line-height: 1.5;
   }
+
+  h1 span {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
   a {
     color: yellow;
     text-decoration: none;
@@ -38,8 +45,12 @@
 </style>
 </head>
 <body>
-<h1>Owned by <a href="https://hackerone.com/almuntadhar" onclick="window.open(this.href, '_blank')" target="_blank">Al-Muntadhar</a></h1> <!-- the reason for window.open() is because the CSS used before might interupt the pointer. however, CSS is changed -->
-<div class="color-splash" id="splash"></div>
-
-
+  <h1>
+    Owned by 
+    <a href="https://hackerone.com/almuntadhar" target="_blank">Al-Muntadhar</a>
+    <span>
+      Contacted by <a href="https://hackerone.com/almuntadhar" target="_blank">Al-Muntadhar</a>? 
+      Login <a href="/login">here</a>
+    </span>
+  </h1>
 </body></html>
