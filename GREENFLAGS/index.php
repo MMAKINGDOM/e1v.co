@@ -230,7 +230,7 @@ footer {
                 <tr>
                     <td><a style="color: rgb(116, 85, 8);" href="/<?php echo htmlspecialchars($f); ?>" target="_blank"><?php echo htmlspecialchars($f); ?></a></td>
                     <td>
-                        <a href="?delete=<?php echo urlencode($f); ?>" onclick="return confirm('Are you sure??')" style="color: red">Delete</a> <!-- the Confirm will here will return whenever the user really wants to delte the file or not -->
+                        <a href="?delete=<?php echo urlencode($f); ?>" onclick="return confirm('Are you sure??')" style="color: red">Delete</a> <!-- the Confirm here will return whenever the user really wants to delte the file or not -->
                     </td>
                 </tr>
             <?php endforeach; ?>
